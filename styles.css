@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.car {
+    width: 500px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    animation: drive 6.1s linear infinite;
+    z-index: 1;
+}
+
+.boy1 {
+    width: 270px;
+    position: absolute;
+    bottom: 265px;
+    left: 0;
+    animation: walk-right 10s linear infinite;
+}
+
+.dog {
+    width: 270px;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    animation: walk-left 10s linear infinite;
+    z-index: 2;
+}
+
+.bike {
+    width: 370px;
+    position: absolute;
+    bottom: 160px;
+    left: -500px;
+    animation: biking 7.3s linear infinite;
+    z-index: 0;
+}
+
+.bike2 {
+    width: 550px;
+    position: absolute;
+    bottom: 40px;
+    right: -500px;
+    animation: bike2 7.8s linear infinite;
+    z-index: 1;
+}
+
+@keyframes drive {
+    0% {
+        left: -600px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes walk-right {
+    0% {
+        left: -300px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes walk-left {
+    0% {
+        right: -300px;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes biking {
+    0% {
+        left: -500px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes bike2 {
+    0% {
+        right: -500px;
+    }
+    100% {
+        right: 100%;
+    }
+}
